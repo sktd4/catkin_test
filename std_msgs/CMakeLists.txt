@@ -1,4 +1,7 @@
+# 운영체제에 설치된 cmake의 최소 요구 버전
 cmake_minimum_required(VERSION 3.0.2)
+
+# 패키지의 이름으로, package.xml에서 입력한 패키지 이름을 그대로 사용
 project(std_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -7,19 +10,25 @@ project(std_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
+# 캐킨 빌드할 시 요구되는 구성 요소 패키지. 사용자가 만든 패키지가 의존하는 다른 패키지를 먼저 설치하는 옵션
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+
+# ROS 이외의 패키지를 사용하는 예: Boost를 사용할 때 system 패키지를 설치하도록 함
+find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
+
+# 파이썬을 이용하기 위해 rospy를 사용할 때 설정하는 옵션. 파이썬 설치 프로세스인 setup.py를 부르는 역할
+catkin_python_setup()
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -46,31 +55,41 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+
+# 메시지 파일을 추가
+# FILES: 현재 패키지 폴더의 msg 폴더 안의 .msg 파일들을 참조해 헤더 파일(.h)를 자동으로 생성한다는 의미
+# 만약 새 메시지를 만든다면 msg 폴더를 만든 뒤 그 안에 있는 메시지 파일 이름을 입력함. 여기에서는 MyMessage1
+add_message_files(
+  FILES
+  Message1.msg
+  Message2.msg
+)
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+# 사용하는 서비스 파일을 추가. 방식은 메시지 파일과 같으며, 사용하려면 srv 폴더를 만든 뒤 해당 파일 이름을 입력해둬야 한다.
+add_service_files(
+  FILES
+  Service1.srv
+  Service2.srv
+)
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+# 사용하는 서비스 파일을 추가. 방식은 메시지, 서비스 파일과 같다.
+add_action_files(
+  FILES
+  Action1.action
+  Action2.action
+)
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+# 의존하는 메시지를 설정
+# DEPENDENCIES: 아래에 해당하는 메시지 패키지를 사용한다는 의미
+# std_msgs, sensor_msgs가 그 예시
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+  sensor_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -101,6 +120,12 @@ find_package(catkin REQUIRED COMPONENTS
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
+
+# 캐킨 빌드 옵션
+## INCLUDE: 뒤에 설정한 패키지 내부 폴더인 include의 헤더 파일을 사용함
+## LIBRARIES: 뒤에 설정한 패키지의 라이브러리를 사용함
+## CATKIN_DEPENDS: 의존하는 패키지 지정
+## DEPENDS: 시스템 의존 패키지
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES std_msgs
