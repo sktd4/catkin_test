@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/sktd4/catkin_ws/devel/include/test_pkg/test_msg.h"
   "CMakeFiles/test_pkg_generate_messages_cpp"
-  "devel/include/test_pkg/test_msg.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,0 @@
-/home/sktd4/catkin_ws/build/test_pkg/devel/share/gennodejs/ros/test_pkg/msg/test_msg.js

@@ -1,0 +1,2 @@
+test_pkg
+-DCATKIN_DEVEL_PREFIX=/home/sktd4/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sktd4/catkin_ws/install -G Unix Makefiles

@@ -1,2 +1,0 @@
-Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake /home/sktd4/catkin_ws/src/test_pkg -DCMAKE_INSTALL_PREFIX=/home/sktd4/catkin_ws/install/test_pkg
-Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '1': /usr/bin/cmake /home/sktd4/catkin_ws/src/test_pkg -DCMAKE_INSTALL_PREFIX=/home/sktd4/catkin_ws/install/test_pkg

@@ -68,13 +68,13 @@ set(test_pkg_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(test_pkg_SOURCE_PREFIX /home/sktd4/catkin_ws/src/test_pkg)
-  set(test_pkg_DEVEL_PREFIX /home/sktd4/catkin_ws/build/test_pkg/devel)
+  set(test_pkg_DEVEL_PREFIX /home/sktd4/catkin_ws/devel)
   set(test_pkg_INSTALL_PREFIX "")
   set(test_pkg_PREFIX ${test_pkg_DEVEL_PREFIX})
 else()
   set(test_pkg_SOURCE_PREFIX "")
   set(test_pkg_DEVEL_PREFIX "")
-  set(test_pkg_INSTALL_PREFIX /home/sktd4/catkin_ws/install/test_pkg)
+  set(test_pkg_INSTALL_PREFIX /home/sktd4/catkin_ws/install)
   set(test_pkg_PREFIX ${test_pkg_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/sktd4/catkin_ws/install/test_pkg/lib;/opt/ros/noetic/lib)
+    foreach(path /home/sktd4/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${test_pkg_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs")
+set(depends "roscpp;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

@@ -1,8 +1,0 @@
-Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake /home/sktd4/catkin_ws/src/test_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/sktd4/catkin_ws/install/test_pkg
-Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake /home/sktd4/catkin_ws/src/test_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/sktd4/catkin_ws/install/test_pkg
-Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg -- -j8 -l8
-Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg -- -j8 -l8
-Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg --target tests -- -j8 -l8
-Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg --target tests -- -j8 -l8
-Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --install /home/sktd4/catkin_ws/build/test_pkg
-Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --install /home/sktd4/catkin_ws/build/test_pkg
