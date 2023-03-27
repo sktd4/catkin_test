@@ -1,0 +1,36 @@
+[0.011s] Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg -- -j8 -l8
+[0.030s] -- Using CATKIN_DEVEL_PREFIX: /home/sktd4/catkin_ws/build/test_pkg/devel
+[0.030s] -- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+[0.030s] -- This workspace overlays: /opt/ros/noetic
+[0.031s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.047s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.047s] -- Using Debian Python package layout
+[0.047s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[0.123s] -- Using CATKIN_ENABLE_TESTING: ON
+[0.123s] -- Call enable_testing()
+[0.123s] -- Using CATKIN_TEST_RESULTS_DIR: /home/sktd4/catkin_ws/build/test_pkg/test_results
+[0.158s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[0.158s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[0.158s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[0.173s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.178s] -- Using Python nosetests: /usr/bin/nosetests3
+[0.213s] -- catkin 0.8.10
+[0.214s] -- BUILD_SHARED_LIBS is on
+[0.337s] -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0.481s] -- Configuring done
+[0.488s] -- Generating done
+[0.490s] -- Build files have been written to: /home/sktd4/catkin_ws/build/test_pkg
+[0.504s] Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg -- -j8 -l8
+[0.525s] Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg --target tests -- -j8 -l8
+[0.563s] Built target tests
+[0.571s] Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --build /home/sktd4/catkin_ws/build/test_pkg --target tests -- -j8 -l8
+[0.594s] Invoking command in '/home/sktd4/catkin_ws/build/test_pkg': /usr/bin/cmake --install /home/sktd4/catkin_ws/build/test_pkg
+[0.601s] -- Install configuration: ""
+[0.601s] -- Execute custom install script
+[0.601s] -- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/msg/test_msg.msg
+[0.607s] -- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc
+[0.608s] -- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+[0.608s] -- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+[0.608s] -- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/package.xml
+[0.610s] Invoked command in '/home/sktd4/catkin_ws/build/test_pkg' returned '0': /usr/bin/cmake --install /home/sktd4/catkin_ws/build/test_pkg

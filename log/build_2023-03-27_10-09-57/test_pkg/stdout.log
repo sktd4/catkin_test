@@ -1,0 +1,82 @@
+-- Using CATKIN_DEVEL_PREFIX: /home/sktd4/catkin_ws/build/test_pkg/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/sktd4/catkin_ws/build/test_pkg/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- test_pkg: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sktd4/catkin_ws/build/test_pkg
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target _test_pkg_generate_messages_check_deps_test_msg[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _test_pkg_generate_messages_check_deps_test_msg
+[35m[1mScanning dependencies of target test_pkg_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target test_pkg_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target test_pkg_generate_messages_eus[0m
+[35m[1mScanning dependencies of target test_pkg_generate_messages_py[0m
+[35m[1mScanning dependencies of target test_pkg_generate_messages_nodejs[0m
+[ 14%] [34m[1mGenerating Python from MSG test_pkg/test_msg[0m
+[ 42%] [34m[1mGenerating EusLisp code from test_pkg/test_msg.msg[0m
+[ 57%] [34m[1mGenerating C++ code from test_pkg/test_msg.msg[0m
+[ 57%] [34m[1mGenerating EusLisp manifest code for test_pkg[0m
+[ 71%] [34m[1mGenerating Javascript code from test_pkg/test_msg.msg[0m
+[ 85%] [34m[1mGenerating Lisp code from test_pkg/test_msg.msg[0m
+[ 85%] Built target test_pkg_generate_messages_lisp
+[ 85%] Built target test_pkg_generate_messages_nodejs
+[ 85%] Built target test_pkg_generate_messages_cpp
+[100%] [34m[1mGenerating Python msg __init__.py for test_pkg[0m
+[100%] Built target test_pkg_generate_messages_py
+[100%] Built target test_pkg_generate_messages_eus
+[35m[1mScanning dependencies of target test_pkg_generate_messages[0m
+[100%] Built target test_pkg_generate_messages
+Built target tests
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/msg/test_msg.msg
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkg-msg-paths.cmake
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/include/test_pkg/test_msg.h
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/roseus/ros/test_pkg/manifest.l
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/roseus/ros/test_pkg/msg/test_msg.l
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/common-lisp/ros/test_pkg/msg/_package.lisp
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/common-lisp/ros/test_pkg/msg/_package_test_msg.lisp
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/common-lisp/ros/test_pkg/msg/test_msg.lisp
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/common-lisp/ros/test_pkg/msg/test_pkg-msg.asd
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/gennodejs/ros/test_pkg/_index.js
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/gennodejs/ros/test_pkg/msg/_index.js
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/gennodejs/ros/test_pkg/msg/test_msg.js
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/lib/python3/dist-packages/test_pkg/__init__.py
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/lib/python3/dist-packages/test_pkg/msg/__init__.py
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/lib/python3/dist-packages/test_pkg/msg/_test_msg.py
+-- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc
+-- Symlinking: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkg-msg-extras.cmake
+-- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+-- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+-- Up-to-date symlink: /home/sktd4/catkin_ws/install/test_pkg/share/test_pkg/package.xml
+Listing '/home/sktd4/catkin_ws/build/test_pkg/devel/lib/python3/dist-packages/test_pkg'...
+Compiling '/home/sktd4/catkin_ws/build/test_pkg/devel/lib/python3/dist-packages/test_pkg/__init__.py'...
+Listing '/home/sktd4/catkin_ws/build/test_pkg/devel/lib/python3/dist-packages/test_pkg/msg'...
+Compiling '/home/sktd4/catkin_ws/build/test_pkg/devel/lib/python3/dist-packages/test_pkg/msg/__init__.py'...
+Compiling '/home/sktd4/catkin_ws/build/test_pkg/devel/lib/python3/dist-packages/test_pkg/msg/_test_msg.py'...

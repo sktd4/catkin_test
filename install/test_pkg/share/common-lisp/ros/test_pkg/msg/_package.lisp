@@ -1,0 +1,1 @@
+/home/sktd4/catkin_ws/build/test_pkg/devel/share/common-lisp/ros/test_pkg/msg/_package.lisp

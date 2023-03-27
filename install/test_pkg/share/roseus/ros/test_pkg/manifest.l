@@ -1,0 +1,1 @@
+/home/sktd4/catkin_ws/build/test_pkg/devel/share/roseus/ros/test_pkg/manifest.l
